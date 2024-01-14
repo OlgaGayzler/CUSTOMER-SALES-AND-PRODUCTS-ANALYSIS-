@@ -6,17 +6,17 @@ from sqlalchemy import create_engine
 import json
 import psycopg2
 #read the raw_department.txt
-file_path = r'C:\Users\user\Desktop\Data Analist\Haker U\FinalProject\phyton\raw_department.txt'
+file_path = r'C:\raw_department.txt'
 raw_department = pd.read_csv(file_path, delimiter = '-')
 #print(raw_department)
 #print("\\")
 #read the raw_department_budget.txt
-file_path1 = r'C:\Users\user\Desktop\Data Analist\Haker U\FinalProject\phyton\raw_department_budget.txt'
+file_path1 = r'C:\raw_department_budget.txt'
 raw_department_budget = pd.read_json(file_path1, lines='true')
 #print(raw_department_budget)
 #print("\\")
 #read the raw_department_budget2.txt
-file_path2 = r'C:\Users\user\Desktop\Data Analist\Haker U\FinalProject\phyton\raw_department_budget2.txt'
+file_path2 = r'C:\raw_department_budget2.txt'
 raw_department_budget2 = pd.read_json(file_path2)
 #print(raw_department_budget2)
 #print("\\")
